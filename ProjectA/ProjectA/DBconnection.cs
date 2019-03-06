@@ -10,7 +10,7 @@ namespace ProjectA
     class DBconnection
     {
         public SqlConnection connection;
-        public string conStr = "Data Source=DESKTOP-L1Q6T8J\BASITSQL;Initial Catalog=ProjectA;Integrated Security=True";
+        public string conStr = "Data Source=DESKTOP-L1Q6T8J\\BASITSQL;Initial Catalog=ProjectA;Integrated Security=True";
         
         private static DBconnection Instance;
         private DBconnection()
@@ -61,4 +61,4 @@ namespace ProjectA
         }
     }
 }
-}
+
