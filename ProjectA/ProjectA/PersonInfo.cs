@@ -63,5 +63,12 @@ namespace ProjectA
             this.Hide();
             ViewAll.Show();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddGroup addGroup = new AddGroup();
+            this.Hide();
+            addGroup.Show();
+        }
     }
 }
