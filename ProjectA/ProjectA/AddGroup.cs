@@ -71,5 +71,12 @@ namespace ProjectA
             this.Hide();
             project.Show();
         }
+
+        private void lblViewAll_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form ViewAll = new frmViewAll();
+            this.Hide();
+            ViewAll.Show();
+        }
     }
 }

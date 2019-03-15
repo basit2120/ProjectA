@@ -58,5 +58,17 @@ namespace ProjectA
         {
             this.Show();
         }
+
+        private void Project_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblViewAll_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form ViewAll = new frmViewAll();
+            this.Hide();
+            ViewAll.Show();
+        }
     }
 }

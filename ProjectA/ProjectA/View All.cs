@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,9 @@ namespace ProjectA
 {
     public partial class frmViewAll : Form
     {
+        public string conSt = "Data Source=DESKTOP-L1Q6T8J\\BASITSQL;Initial Catalog=ProjectA;Integrated Security=True";
+
+
         public frmViewAll()
         {
             InitializeComponent();
@@ -50,6 +54,25 @@ namespace ProjectA
             Project project = new Project();
             this.Hide();
             project.Show();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void frmViewAll_Load(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(conSt);
+            con.Open();
+            if (con.State == System.Data.ConnectionState.Open)
+            {
+                string show = "select * from Person";
+                DataTable table = new DataTable();
+                SqlDataAdapter dat = new SqlDataAdapter(show, con);
+                dat.Fill(table);
+                dataGridView1.DataSource = table;
+            }
         }
     }
 }
