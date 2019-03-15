@@ -10,11 +10,18 @@ using System.Windows.Forms;
 
 namespace ProjectA
 {
-    public partial class Form1 : Form
+    public partial class frmViewAll : Form
     {
-        public Form1()
+        public frmViewAll()
         {
             InitializeComponent();
+        }
+
+        private void lblHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form p = new frmPersonInformation();
+            this.Hide();
+            p.Show();
         }
     }
 }
