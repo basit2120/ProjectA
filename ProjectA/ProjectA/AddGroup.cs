@@ -45,5 +45,31 @@ namespace ProjectA
         {
 
         }
+
+        private void linkLabel1_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            
+        }
+
+        private void lblHome_LinkClicked_1(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmPersonInformation frmPerson = new frmPersonInformation();
+            this.Hide();
+            frmPerson.Show();
+        }
+
+        private void lblAdvisor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Advisor advisor = new Advisor();
+            this.Hide();
+            advisor.Show();
+        }
+
+        private void lblProject_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Project project = new Project();
+            this.Hide();
+            project.Show();
+        }
     }
 }

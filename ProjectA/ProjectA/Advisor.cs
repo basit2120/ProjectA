@@ -64,5 +64,33 @@ namespace ProjectA
                 }
             }
         }
+
+        private void lblHome_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            frmPersonInformation frmPerson = new frmPersonInformation();
+            this.Hide();
+            frmPerson.Show();
+        }
+
+        private void lblAdvisor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Advisor advisor = new Advisor();
+            this.Hide();
+            advisor.Show();
+        }
+
+        private void lblProject_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Project project = new Project();
+            this.Hide();
+            project.Show();
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            AddGroup addGroup = new AddGroup();
+            this.Hide();
+            addGroup.Show();
+        }
     }
 }

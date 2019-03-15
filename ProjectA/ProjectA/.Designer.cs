@@ -44,6 +44,8 @@
             this.lblViewAll = new System.Windows.Forms.LinkLabel();
             this.lblHome = new System.Windows.Forms.LinkLabel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.lblAdvisor = new System.Windows.Forms.LinkLabel();
+            this.lblProject = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
             // txtPFName
@@ -188,11 +190,35 @@
             this.linkLabel1.Text = "Group CreationDate";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
+            // lblAdvisor
+            // 
+            this.lblAdvisor.AutoSize = true;
+            this.lblAdvisor.Location = new System.Drawing.Point(13, 145);
+            this.lblAdvisor.Name = "lblAdvisor";
+            this.lblAdvisor.Size = new System.Drawing.Size(42, 13);
+            this.lblAdvisor.TabIndex = 16;
+            this.lblAdvisor.TabStop = true;
+            this.lblAdvisor.Text = "Advisor";
+            this.lblAdvisor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAdvisor_LinkClicked);
+            // 
+            // lblProject
+            // 
+            this.lblProject.AutoSize = true;
+            this.lblProject.Location = new System.Drawing.Point(13, 187);
+            this.lblProject.Name = "lblProject";
+            this.lblProject.Size = new System.Drawing.Size(40, 13);
+            this.lblProject.TabIndex = 17;
+            this.lblProject.TabStop = true;
+            this.lblProject.Text = "Project";
+            this.lblProject.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblProject_LinkClicked);
+            // 
             // frmPersonInformation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(470, 351);
+            this.Controls.Add(this.lblProject);
+            this.Controls.Add(this.lblAdvisor);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.lblHome);
             this.Controls.Add(this.lblViewAll);
@@ -235,6 +261,8 @@
         private System.Windows.Forms.LinkLabel lblViewAll;
         private System.Windows.Forms.LinkLabel lblHome;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel lblAdvisor;
+        private System.Windows.Forms.LinkLabel lblProject;
     }
 }
 

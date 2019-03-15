@@ -70,5 +70,19 @@ namespace ProjectA
             this.Hide();
             addGroup.Show();
         }
+
+        private void lblAdvisor_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Advisor advisor = new Advisor();
+            this.Hide();
+            advisor.Show();
+        }
+
+        private void lblProject_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Project project = new Project();
+            this.Hide();
+            project.Show();
+        }
     }
 }

@@ -32,13 +32,17 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.lblHome = new System.Windows.Forms.LinkLabel();
+            this.lblProject = new System.Windows.Forms.LinkLabel();
+            this.lblAdvisor = new System.Windows.Forms.LinkLabel();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 65);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 81);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(625, 195);
             this.dataGridView1.TabIndex = 0;
@@ -72,11 +76,59 @@
             this.lblHome.Text = "Home";
             this.lblHome.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblHome_LinkClicked);
             // 
+            // lblProject
+            // 
+            this.lblProject.AutoSize = true;
+            this.lblProject.Location = new System.Drawing.Point(359, 31);
+            this.lblProject.Name = "lblProject";
+            this.lblProject.Size = new System.Drawing.Size(40, 13);
+            this.lblProject.TabIndex = 21;
+            this.lblProject.TabStop = true;
+            this.lblProject.Text = "Project";
+            this.lblProject.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblProject_LinkClicked);
+            // 
+            // lblAdvisor
+            // 
+            this.lblAdvisor.AutoSize = true;
+            this.lblAdvisor.Location = new System.Drawing.Point(274, 31);
+            this.lblAdvisor.Name = "lblAdvisor";
+            this.lblAdvisor.Size = new System.Drawing.Size(42, 13);
+            this.lblAdvisor.TabIndex = 20;
+            this.lblAdvisor.TabStop = true;
+            this.lblAdvisor.Text = "Advisor";
+            this.lblAdvisor.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lblAdvisor_LinkClicked);
+            // 
+            // linkLabel1
+            // 
+            this.linkLabel1.AutoSize = true;
+            this.linkLabel1.Location = new System.Drawing.Point(147, 31);
+            this.linkLabel1.Name = "linkLabel1";
+            this.linkLabel1.Size = new System.Drawing.Size(101, 13);
+            this.linkLabel1.TabIndex = 19;
+            this.linkLabel1.TabStop = true;
+            this.linkLabel1.Text = "Group CreationDate";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
+            // 
+            // linkLabel2
+            // 
+            this.linkLabel2.AutoSize = true;
+            this.linkLabel2.Location = new System.Drawing.Point(46, 31);
+            this.linkLabel2.Name = "linkLabel2";
+            this.linkLabel2.Size = new System.Drawing.Size(35, 13);
+            this.linkLabel2.TabIndex = 18;
+            this.linkLabel2.TabStop = true;
+            this.linkLabel2.Text = "Home";
+            this.linkLabel2.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel2_LinkClicked);
+            // 
             // frmViewAll
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(649, 321);
+            this.Controls.Add(this.lblProject);
+            this.Controls.Add(this.lblAdvisor);
+            this.Controls.Add(this.linkLabel1);
+            this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.lblHome);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
@@ -96,5 +148,9 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.LinkLabel lblHome;
+        private System.Windows.Forms.LinkLabel lblProject;
+        private System.Windows.Forms.LinkLabel lblAdvisor;
+        private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel linkLabel2;
     }
 }
