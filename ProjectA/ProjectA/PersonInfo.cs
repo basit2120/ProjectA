@@ -30,11 +30,11 @@ namespace ProjectA
                 string query;
                 if (cmdPGender.Text == "MALE")
                 {
-                    query = "Insert into Person(FirstName,LastName,Contact,Email,DateOfBirth,Gender)Values('" + txtPFName.Text + "','" + txtPLname.Text.ToString() + "','" + txtPContact.Text.ToString() + "','" + txtPEmail.Text.ToString() + "','" + Convert.ToDateTime(dtPDoB.Value) + "','" +0+ "')";
+                    query = "Insert into Person(FirstName,LastName,Contact,Email,DateOfBirth,Gender)Values('" + txtPFName.Text + "','" + txtPLname.Text.ToString() + "','" + txtPContact.Text.ToString() + "','" + txtPEmail.Text.ToString() + "','" + Convert.ToDateTime(dtPDoB.Value) + "','" + 1 + "')";
                 }
                 else
                 {
-                    query = "Insert into Person(FirstName,LastName,Contact,Email,DateOfBirth,Gender)Values('" + txtPFName.Text + "','" + txtPLname.Text.ToString() + "','" + txtPContact.Text.ToString() + "','" + txtPEmail.Text.ToString() + "','" + Convert.ToDateTime(dtPDoB.Value) + "','" + 1 + "')";
+                    query = "Insert into Person(FirstName,LastName,Contact,Email,DateOfBirth,Gender)Values('" + txtPFName.Text + "','" + txtPLname.Text.ToString() + "','" + txtPContact.Text.ToString() + "','" + txtPEmail.Text.ToString() + "','" + Convert.ToDateTime(dtPDoB.Value) + "','" + 2 + "')";
                 }
 
 
